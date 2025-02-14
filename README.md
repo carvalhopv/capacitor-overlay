@@ -15,6 +15,7 @@ npx cap sync
 
 * [`checkPermission()`](#checkpermission)
 * [`openOverlaySettings()`](#openoverlaysettings)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -24,14 +25,14 @@ npx cap sync
 ### checkPermission()
 
 ```typescript
-checkPermission() => Promise<{ granted: boolean; }>
+checkPermission() => Promise<checkPermissionResult>
 ```
 
 Returns if the app has overlay permission.
 
 Only available on Android.
 
-**Returns:** <code>Promise&lt;{ granted: boolean; }&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#checkpermissionresult">checkPermissionResult</a>&gt;</code>
 
 **Since:** 0.0.1
 
@@ -51,5 +52,15 @@ Only available on Android.
 **Since:** 0.0.1
 
 --------------------
+
+
+### Interfaces
+
+
+#### checkPermissionResult
+
+| Prop          | Type                 | Description                        | Since |
+| ------------- | -------------------- | ---------------------------------- | ----- |
+| **`granted`** | <code>boolean</code> | If the app has overlay permission. | 0.0.1 |
 
 </docgen-api>

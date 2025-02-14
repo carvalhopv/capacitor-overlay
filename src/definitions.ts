@@ -6,7 +6,7 @@ export interface CapacitorOverlayPlugin {
    *
    * @since 0.0.1
    */
-  checkPermission(): Promise<{ granted: boolean }>;
+  checkPermission(): Promise<checkPermissionResult>;
   /**
    * Opens the Overlay settings page.
    *
@@ -19,6 +19,14 @@ export interface CapacitorOverlayPlugin {
 /**
  * @since 0.0.1
  */
+export interface checkPermissionResult {
+  /**
+   * If the app has overlay permission.
+   *
+   * @since 0.0.1
+   */
+  granted: boolean;
+}
 export declare enum ErrorCode {
   /**
    * The picker was canceled by the user.

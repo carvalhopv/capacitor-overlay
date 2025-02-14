@@ -1,6 +1,9 @@
 import { registerPlugin } from '@capacitor/core';
 
-const CapacitorOverlay = registerPlugin('CapacitorOverlay');
+import type { CapacitorOverlayPlugin } from './definitions';
+
+const CapacitorOverlay = registerPlugin<CapacitorOverlayPlugin>('CapacitorOverlay');
+
 export * from './definitions';
 export { CapacitorOverlay };
 //# sourceMappingURL=index.js.map
