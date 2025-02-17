@@ -1,6 +1,6 @@
 {
   "name": "capacitor-overlay",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Provides a simple way to check if the application has permission to overlay other apps on Android.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
