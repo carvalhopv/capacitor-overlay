@@ -2,6 +2,14 @@
 
 Provides a simple way to check if the application has permission to overlay other apps on Android.
 
+# Supported Platforms
+
+| Platform | Supported |
+| -------- | --------- |
+| Android  | ✅        |
+| iOS      | ❌        |
+| Web      | ❌        |
+
 ## Install
 
 ```bash
